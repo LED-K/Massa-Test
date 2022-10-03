@@ -1,0 +1,19 @@
+{
+  "name": "massa-sc-template",
+  "version": "1.0.0",
+  "description": "Init a massa smart contract development project",
+  "repository": "https://github.com/massalabs/massa-sc-template",
+  "author": "Massa Labs <info@massa.net>",
+  "private": false,
+  "scripts": {
+    "build": "massa-sc-scripts build-sc src/smart-contract.ts && massa-sc-scripts build-sc src/main.ts build/main.wasm",
+    "clean": "massa-sc-scripts clean"
+  },
+  "dependencies": {
+    "@massalabs/massa-sc-std": "^4.0.2",
+    "@types/axios": "^0.14.0",
+    "assemblyscript": "^0.19.20",
+    "axios": "^0.27.2",
+    "massa-sc-scripts": "4.0.7"
+  }
+}
